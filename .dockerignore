@@ -1,0 +1,13 @@
+__pycache__
+.venv
+.env
+.git
+.vscode
+.idea
+*.sqlite3
+tests
+.gitignore
+*.db
+*.xlsx
+.example
+pytest.ini
