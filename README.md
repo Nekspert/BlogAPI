@@ -170,7 +170,8 @@ REDIS_PORT=6379
 REDIS_PASSWORD=
 
 # RedisDB
-REDIS_CACHE=0
+REDIS_DB_CACHE=0
+REDIS_DB_TEST_CACHE=1
 ```
 
 > Значения в вашем проекте могут отличаться. При необходимости обновите их под свой `.env`.
@@ -182,7 +183,7 @@ REDIS_CACHE=0
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Nekspert/BlogAPI.git
 cd blog_api
 ```
 

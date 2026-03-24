@@ -67,7 +67,9 @@ class TestDatabaseConfig(DatabaseBase):
     model_config = SettingsBase.model_config | SettingsConfigDict(env_prefix='POSTGRES_TEST_')
 
 
-class RedisDB(BaseModel):
+class RedisDB(SettingsBase):
+    model_config = SettingsBase.model_config | SettingsConfigDict(env_prefix='REDIS_DB_')
+
     cache: int = 0
     test_cache: int = 1
 
